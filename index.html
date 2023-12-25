@@ -1,127 +1,1284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/null.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <form class="header__search" action="#">
-              <a class="search-button" href="#">
-                <svg
-                  width="36"
-                  height="35"
-                  viewBox="0 0 36 35"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
-                    stroke="#C4C4C4"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <input
-                class="search-input"
-                type="text"
-                placeholder="Поиск по товарам"
+      <header class="header">
+        <form class="header__search" action="#">
+          <a class="search-button" href="#">
+            <svg
+              width="36"
+              height="35"
+              viewBox="0 0 36 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
+                stroke="#C4C4C4"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
-            </form>
-            <div class="header__container">
-              <div class="header__burger burger">
-                <div class="burger__button">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+            </svg>
+          </a>
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Поиск по товарам"
+          />
+        </form>
+        <div class="header__container">
+          <div class="header__burger burger">
+            <div class="burger__button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="burger__menu-burger">
+              <ul class="burger__menu-list">
+                <li class="burger__menu-item">
+                  <a href="#" class="burger__menu-link">Каталог товаров</a>
+                </li>
+                <li class="burger__menu-item">
+                  <a href="#" class="burger__menu-link">Блог</a>
+                </li>
+                <li class="burger__menu-item">
+                  <a href="#" class="burger__menu-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="" class="header__logo">
+            <img src="./img/logo.png" alt="#" />
+          </a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">Каталог товаров</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Блог</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <a class="actions__link search-btn" href="#">
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a class="actions__link" href="#">
+              <svg
+                width="37"
+                height="35"
+                viewBox="0 0 37 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a class="actions__link" href="#">
+              <svg
+                width="33"
+                height="36"
+                viewBox="0 0 33 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="view-the-catalog">
+          <div class="view-the-catalog__container">
+            <div class="view-the-catalog__content">
+              <div class="view-the-catalog__title title">
+                Свежеобжаренный кофе
+              </div>
+              <div class="view-the-catalog__text">
+                <div class="text-one">
+                  Кофе Калининградской обжарки из разных стран произрастания с
+                  доставкой на дом.
                 </div>
-                <div class="burger__menu-burger">
-                  <ul class="burger__menu-list">
-                    <li class="burger__menu-item">
-                      <a href="#" class="burger__menu-link">Каталог товаров</a>
-                    </li>
-                    <li class="burger__menu-item">
-                      <a href="#" class="burger__menu-link">Блог</a>
-                    </li>
-                    <li class="burger__menu-item">
-                      <a href="#" class="burger__menu-link">Контакты</a>
-                    </li>
-                  </ul>
+                <div class="text-two">
+                  Мы обжариваем кофе <span>каждые выходные.</span>
                 </div>
               </div>
-              <a href="" class="header__logo">
-                <img src="./img/logo.png" alt="#" />
-              </a>
-              <nav class="header__menu menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="" class="menu__link">Каталог товаров</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="" class="menu__link">Блог</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="" class="menu__link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="header__actions">
-                <a class="actions__link search-btn" href="#">
-                  <svg
-                    width="36"
-                    height="35"
-                    viewBox="0 0 36 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-                <a class="actions__link" href="#">
-                  <svg
-                    width="37"
-                    height="35"
-                    viewBox="0 0 37 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-                <a class="actions__link" href="#">
-                  <svg
-                    width="33"
-                    height="36"
-                    viewBox="0 0 33 36"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
+              <div class="view-the-catalog__sl">
+                <span class="circle circle-orange"></span>
+                <span class="circle circle-white"></span>
+                <span class="circle circle-white"></span>
+              </div>
+              <div class="view-the-catalog__button">
+                <a href="#" class="button">Посмотреть каталог</a>
               </div>
             </div>
-    
-          </header>
+            <div class="view-the-catalog__image">
+              <div class="view-the-catalog__cup">
+                <img src="./img/backgroundCup.png" alt="cup" />
+              </div>
+              <div class="view-the-catalog__beans">
+                <img src="./img/backgroundCoffeeBeans.png" alt="beans" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog">
+          <div class="catalog__container">
+            <div class="catalog__content">
+              <div class="catalog__title">Каталоги нашей продукции</div>
+              <div class="catalog__cards">
+                <div class="card">
+                  <div class="card__image">
+                    <img src="./img/cardCoffee.png" alt="#" />
+                  </div>
+                  <div class="card__title">Свежеобжаренный кофе</div>
+                  <div class="card__button">Купить</div>
+                </div>
+                <div class="card">
+                  <div class="card__image">
+                    <img src="./img/cardTea.png" alt="#" />
+                  </div>
+                  <div class="card__title">Чай и кофейные напитки</div>
+                  <div class="card__button">Купить</div>
+                </div>
+                <div class="card">
+                  <div class="card__image">
+                    <img src="./img/cardProducts.png" alt="#" />
+                  </div>
+                  <div class="card__title">Продукция для вендинга</div>
+                  <div class="card__button">Купить</div>
+                </div>
+                <div class="card">
+                  <div class="card__image">
+                    <img src="./img/cardHealthyEating.png" alt="#" />
+                  </div>
+                  <div class="card__title">Здоровое питание</div>
+                  <div class="card__button">Купить</div>
+                </div>
+              </div>
+              <div class="catalog-sl">
+                <span class="circle circle-orange"></span>
+                <span class="circle circle-white"></span>
+                <span class="circle circle-white"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discounts">
+          <div class="discounts__container">
+            <div class="discounter__content">
+              <div class="discounts__top">
+                <div class="discounter__title">Товары со скидкой</div>
+                <div class="discounter__description">
+                  Наша компания предлагает покупать товар со скидкой не только в
+                  дни распродаж или в течение действия ограниченных предложений,
+                  но и пользоваться скидками постоянно!
+                </div>
+              </div>
+              <div class="discounter__cards">
+                <div class="arrow-next">
+                  <svg
+                    width="27"
+                    height="16"
+                    viewBox="0 0 27 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68055 0.538404 7.04738 0.538404 6.65686 0.928929L0.292893 7.29289ZM27 7L1 7L1 9L27 9L27 7Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="cards__wrapper">
+                  <div class="card-discounter">
+                    <div class="card-discounter__wrapper">
+                      <div class="card-discounter__header">
+                        <div class="header-percent">
+                          <img src="./img/icons/percent.svg" alt="percent" />
+                        </div>
+                        <div class="header-weight">
+                          <div class="header-weight__wrapper">
+                            <div class="weight">250 г.</div>
+                            <div class="weight-arrow">
+                              <svg
+                                viewBox="0 0 14 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M1 1L7 6L13 1"
+                                  stroke="black"
+                                  stroke-width="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header-sale">Скидки</div>
+                      </div>
+                      <div class="card-discounter__body">
+                        <div class="body-img">
+                          <img src="./img/package.png" alt="package" />
+                        </div>
+                        <div class="card-discounter__context">
+                          <div class="rating">
+                            <div class="rating__image">
+                              <svg
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F0F0F0"
+                                />
+                              </svg>
+                            </div>
+                            <div class="rating-block">
+                              <div class="rating-stars">4.0</div>
+                              <div class="number-of-reviews">(32 отзыва)</div>
+                            </div>
+                          </div>
+                          <div class="characteristic">
+                            <div class="characteristic__image">
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                            </div>
+                            <div class="some-property">
+                              <div class="property">
+                                <div class="property__title">Кислинка</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                              <div class="property">
+                                <div class="property__title">Горчинка</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                              <div class="property">
+                                <div class="property__title">Насыщенность</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-discounter__title">Colombia Supremo</div>
+                      <div class="card-discounter__text">
+                        Свежеобжаренный кофе - описание товара, вкус, аромат
+                      </div>
+                      <div class="card-discounter__footer">
+                        <div class="card-discounter__price">
+                          <div class="card-discounter__old-price">350 ₽</div>
+                          <div class="card-discounter__new-price">250 ₽</div>
+                        </div>
+                        <div class="card-discounter__button">
+                          <a class="card-discounter__button-link" href="#"
+                            >В корзину</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-discounter">
+                    <div class="card-discounter__wrapper">
+                      <div class="card-discounter__header">
+                        <div class="header-percent">
+                          <img src="./img/icons/percent.svg" alt="percent" />
+                        </div>
+                        <div class="header-weight">
+                          <div class="header-weight__wrapper">
+                            <div class="weight">250 г.</div>
+                            <div class="weight-arrow">
+                              <svg
+                                viewBox="0 0 14 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M1 1L7 6L13 1"
+                                  stroke="black"
+                                  stroke-width="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header-sale">Скидки</div>
+                      </div>
+                      <div class="card-discounter__body">
+                        <div class="body-img">
+                          <img src="./img/package.png" alt="package" />
+                        </div>
+                        <div class="card-discounter__context">
+                          <div class="rating">
+                            <div class="rating__image">
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F0F0F0"
+                                />
+                              </svg>
+                            </div>
+                            <div class="rating-block">
+                              <div class="rating-stars">4.0</div>
+                              <div class="number-of-reviews">(32 отзыва)</div>
+                            </div>
+                          </div>
+                          <div class="characteristic">
+                            <div class="characteristic__image">
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                            </div>
+                            <div class="some-property">
+                              <div class="property">
+                                <div class="property__title">Кислинка</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                              <div class="property">
+                                <div class="property__title">Горчинка</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                              <div class="property">
+                                <div class="property__title">Насыщенность</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-discounter__title">Colombia Supremo</div>
+                      <div class="card-discounter__text">
+                        Свежеобжаренный кофе - описание товара, вкус, аромат
+                      </div>
+                      <div class="card-discounter__footer">
+                        <div class="card-discounter__price">
+                          <div class="card-discounter__old-price">350 ₽</div>
+                          <div class="card-discounter__new-price">250 ₽</div>
+                        </div>
+                        <div class="card-discounter__button">
+                          <a class="card-discounter__button-link" href="#"
+                            >В корзину</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-discounter">
+                    <div class="card-discounter__wrapper">
+                      <div class="card-discounter__header">
+                        <div class="header-percent">
+                          <img src="./img/icons/percent.svg" alt="percent" />
+                        </div>
+                        <div class="header-weight">
+                          <div class="header-weight__wrapper">
+                            <div class="weight">250 г.</div>
+                            <div class="weight-arrow">
+                              <svg
+                                viewBox="0 0 14 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M1 1L7 6L13 1"
+                                  stroke="black"
+                                  stroke-width="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header-sale">Скидки</div>
+                      </div>
+                      <div class="card-discounter__body">
+                        <div class="body-img">
+                          <img src="./img/package.png" alt="package" />
+                        </div>
+                        <div class="card-discounter__context">
+                          <div class="rating">
+                            <div class="rating__image">
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F9B300"
+                                />
+                              </svg>
+                              <svg
+                                width="25"
+                                height="23"
+                                viewBox="0 0 25 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                                  fill="#F0F0F0"
+                                />
+                              </svg>
+                            </div>
+                            <div class="rating-block">
+                              <div class="rating-stars">4.0</div>
+                              <div class="number-of-reviews">(32 отзыва)</div>
+                            </div>
+                          </div>
+                          <div class="characteristic">
+                            <div class="characteristic__image">
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                              <svg
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z"
+                                  fill="#505050"
+                                />
+                              </svg>
+                            </div>
+                            <div class="some-property">
+                              <div class="property">
+                                <div class="property__title">Кислинка</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                              <div class="property">
+                                <div class="property__title">Горчинка</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                              <div class="property">
+                                <div class="property__title">Насыщенность</div>
+                                <div class="property__image">
+                                  <span></span><span></span><span></span
+                                  ><span></span><span></span><span></span
+                                  ><span></span><span class="transparent"></span
+                                  ><span class="transparent"></span
+                                  ><span class="transparent"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-discounter__title">Colombia Supremo</div>
+                      <div class="card-discounter__text">
+                        Свежеобжаренный кофе - описание товара, вкус, аромат
+                      </div>
+                      <div class="card-discounter__footer">
+                        <div class="card-discounter__price">
+                          <div class="card-discounter__old-price">350 ₽</div>
+                          <div class="card-discounter__new-price">250 ₽</div>
+                        </div>
+                        <div class="card-discounter__button">
+                          <a class="card-discounter__button-link" href="#"
+                            >В корзину</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="arrow-next">
+                  <svg
+                    height="16"
+                    viewBox="0 0 27 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.2929L20.3431 0.928934C19.9526 0.53841 19.3195 0.538409 18.9289 0.928934C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM-8.74228e-08 9L26 9L26 7L8.74228e-08 7L-8.74228e-08 9Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="watch-all">Смотреть все</div>
+            </div>
+          </div>
+        </div>
+        <div class="work-with-us">
+          <div class="work-with-us__container">
+            <div class="work-with-us__content">
+              <div class="work-with-us__image">
+                <div class="work-with-us__image-beans">
+                  <img src="./img/beans.png" alt="#" />
+                </div>
+                <div class="work-with-us__image-cup">
+                  <img src="./img/cup.png" alt="#" />
+                </div>
+              </div>
+              <div class="work-with-us__body">
+                <div class="work-with-us__title">
+                  Почему стоит работать именно с нами?
+                </div>
+                <div class="reasons">
+                  <div class="reason__card">
+                    <div class="reason__image">
+                      <svg
+                        width="35"
+                        height="34"
+                        viewBox="0 0 35 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M25.619 12.5H27.0952C28.6613 12.5 30.1632 13.1321 31.2705 14.2574C32.3779 15.3826 33 16.9087 33 18.5C33 20.0913 32.3779 21.6174 31.2705 22.7426C30.1632 23.8679 28.6613 24.5 27.0952 24.5H25.619M25.619 12.5H2V26C2 27.5913 2.62211 29.1174 3.72946 30.2426C4.83682 31.3679 6.33872 32 7.90476 32H19.7143C21.2803 32 22.7822 31.3679 23.8896 30.2426C24.9969 29.1174 25.619 27.5913 25.619 26V12.5ZM7.90476 2V6.5M13.8095 2V6.5M19.7143 2V6.5"
+                          stroke="white"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="reason">
+                      <div class="reason__title">Всегда свежая обжарка</div>
+                      <div class="reason__description">
+                        Подбор степени обжарки под каждый сорт кофе. Всегда
+                        свежая обжарка
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reason__card">
+                    <div class="reason__image">
+                      <svg
+                        width="35"
+                        height="35"
+                        viewBox="0 0 35 35"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.0849 10.087H10.1011M32.0596 20.4545L20.4659 32.0513C20.1655 32.352 19.8089 32.5906 19.4163 32.7534C19.0237 32.9162 18.6028 33 18.1778 33C17.7529 33 17.332 32.9162 16.9394 32.7534C16.5468 32.5906 16.1902 32.352 15.8898 32.0513L2 18.174V2H18.1698L32.0596 15.8935C32.6619 16.4995 33 17.3194 33 18.174C33 19.0286 32.6619 19.8484 32.0596 20.4545Z"
+                          stroke="white"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="reason">
+                      <div class="reason__title">Лучшие цены на продукцию</div>
+                      <div class="reason__description">
+                        Благодаря крупным объемам производства мы даем лучшие
+                        цены на нашу продукцию
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reason__card">
+                    <div class="reason__image">
+                      <svg
+                        width="40"
+                        height="34"
+                        viewBox="0 0 40 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M26.5455 32V28.6667C26.5455 26.8986 25.8558 25.2029 24.6283 23.9526C23.4008 22.7024 21.736 22 20 22H8.54545C6.80949 22 5.14463 22.7024 3.91712 23.9526C2.68961 25.2029 2 26.8986 2 28.6667V32M28.1818 15.3333L31.4545 18.6667L38 12M20.8182 8.66667C20.8182 12.3486 17.8877 15.3333 14.2727 15.3333C10.6578 15.3333 7.72727 12.3486 7.72727 8.66667C7.72727 4.98477 10.6578 2 14.2727 2C17.8877 2 20.8182 4.98477 20.8182 8.66667Z"
+                          stroke="white"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="reason">
+                      <div class="reason__title">Консультации 24/7</div>
+                      <div class="reason__description">
+                        Наши специалисты готовы всегда помочь и подсказать вам с
+                        выбором кофе или другой продукции.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="roast-coffee">
+          <div class="roast-coffee__container">
+            <div class="roast-coffee__content">
+              <div class="roast-coffee__title">Как мы обжариваем наш кофе:</div>
+              <div class="roast-coffee__body">
+                <div class="roast-coffee__part">
+                  Компания Нью Рефайнинг Груп находится в г. Калининграде и
+                  имеет свой склад и представительство в Москве. Завод работает
+                  на рынке свежеобжаренного кофе и растворимой продукции более
+                  15 лет. Завод имеет немецкое оборудование марки Probat по
+                  обжарке кофе и итальянские агломераторы для производства
+                  растворимой продукции.
+                </div>
+                <div class="roast-coffee__part">
+                  Кофе поставляется в контейнерах напрямую с плантаций по всему
+                  миру. Компания имеет долгосрочные контракты по поставке
+                  продукции. Каждая партия проходит строгий контроль на заводе
+                  для проверки зерна. Зеленое зерно обжаривается, проходит
+                  процесс дегазации и тут же отправляется клиентам. Наши
+                  обжарщики прошли обучение в России и за рубежом. У нас свой
+                  подход к каждой партии зерна.
+                </div>
+                <div class="roast-coffee__part">
+                  Мы раскрываем вкус каждого сорта кофе.
+                </div>
+              </div>
+              <div class="roast-coffee__button">
+                <a class="roast-coffee__button-link" href="#"
+                  >Перейти в каталог</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="news__container">
+            <div class="news__content">
+              <div class="news__text">
+                <div class="news__title">Новости компании</div>
+                <div class="news__read">Читать все</div>
+              </div>
+              <div class="news__body">
+                <div class="body__row">
+                  <div class="news__complex">
+                    <div class="complex__image">
+                      <img src="./img/news.png" alt="#" />
+                    </div>
+                    <div class="complex__body">
+                      <div class="complex__title">
+                        Танзанийский кофе. Откуда он взялся и почему мы его так
+                        любим?
+                      </div>
+                      <div class="complex__text">
+                        <div class="complex__part">
+                          Танзания – красивая африканская страна. Именно здесь
+                          расположены легендарные географические объекты –
+                          вулкан Килиманджаро и озеро Виктория.
+                        </div>
+                        <div class="complex__part">
+                          Но наш интерес вызван не столько природными красотами,
+                          сколько кофе...
+                        </div>
+                      </div>
+                      <div class="detail">
+                        <div class="detail__text">Подробнее</div>
+                        <div class="detail__image">
+                          <svg
+                            width="14"
+                            height="12"
+                            viewBox="0 0 14 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z"
+                              fill="#F9B300"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news__simple">
+                    <div class="simple__title">Африканский кофе Кения АА</div>
+                    <div class="simple__text">
+                      Кения АА – у этого кофе, из африканской страны, репутация
+                      одного из самых вкусных и ярких сортов в мире. Многие
+                      обжарщики высоко оценивают местные разновидности
+                      высокогорной арабики.
+                    </div>
+                    <div class="detail">
+                      <div class="detail__text">Подробнее</div>
+                      <div class="detail__image">
+                        <svg
+                          width="14"
+                          height="12"
+                          viewBox="0 0 14 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z"
+                            fill="#F9B300"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="body__row">
+                  <div class="news__simple">
+                    <div class="simple__title">Африканский кофе Кения АА</div>
+                    <div class="simple__text">
+                      Кения АА – у этого кофе, из африканской страны, репутация
+                      одного из самых вкусных и ярких сортов в мире. Многие
+                      обжарщики высоко оценивают местные разновидности
+                      высокогорной арабики.
+                    </div>
+                    <div class="detail">
+                      <div class="detail__text">Подробнее</div>
+                      <div class="detail__image">
+                        <svg
+                          width="14"
+                          height="12"
+                          viewBox="0 0 14 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z"
+                            fill="#F9B300"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news__complex">
+                    <div class="complex__image">
+                      <img src="./img/news.png" alt="#" />
+                    </div>
+                    <div class="complex__body">
+                      <div class="complex__title">
+                        Танзанийский кофе. Откуда он взялся и почему мы его так
+                        любим?
+                      </div>
+                      <div class="complex__text">
+                        <div class="complex__part">
+                          Танзания – красивая африканская страна. Именно здесь
+                          расположены легендарные географические объекты –
+                          вулкан Килиманджаро и озеро Виктория.
+                        </div>
+                        <div class="complex__part">
+                          Но наш интерес вызван не столько природными красотами,
+                          сколько кофе...
+                        </div>
+                      </div>
+                      <div class="detail">
+                        <div class="detail__text">Подробнее</div>
+                        <div class="detail__image">
+                          <svg
+                            width="14"
+                            height="12"
+                            viewBox="0 0 14 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z"
+                              fill="#F9B300"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="on-instagram">
+          <div class="on-instagram__container">
+            <div class="on-instagram__content">
+              <div class="on-instagram__block-title">
+                <div class="on-instagram__title">Мы в Instagram</div>
+                <div class="on-instagram__title-img">
+                  <svg
+                    viewBox="0 0 86 86"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M51.2305 43C51.2305 47.5457 47.5457 51.2305 43 51.2305C38.4543 51.2305 34.7695 47.5457 34.7695 43C34.7695 38.4543 38.4543 34.7695 43 34.7695C47.5457 34.7695 51.2305 38.4543 51.2305 43Z"
+                      fill="#F9B300"
+                    />
+                    <path
+                      d="M62.2482 28.4379C61.8525 27.3658 61.2213 26.3954 60.4012 25.5988C59.6046 24.7787 58.6349 24.1475 57.5621 23.7518C56.6921 23.4139 55.3851 23.0117 52.9777 22.9021C50.3736 22.7834 49.5928 22.7578 43 22.7578C36.4066 22.7578 35.6258 22.7827 33.0223 22.9015C30.6149 23.0117 29.3073 23.4139 28.4379 23.7518C27.3651 24.1475 26.3947 24.7787 25.5988 25.5988C24.7787 26.3954 24.1475 27.3651 23.7512 28.4379C23.4133 29.3079 23.0111 30.6156 22.9015 33.0229C22.7827 35.6264 22.7571 36.4072 22.7571 43.0007C22.7571 49.5934 22.7827 50.3742 22.9015 52.9784C23.0111 55.3857 23.4133 56.6927 23.7512 57.5628C24.1475 58.6355 24.778 59.6053 25.5982 60.4018C26.3947 61.222 27.3645 61.8532 28.4372 62.2488C29.3073 62.5874 30.6149 62.9896 33.0223 63.0992C35.6258 63.2179 36.4059 63.2429 42.9993 63.2429C49.5934 63.2429 50.3742 63.2179 52.9771 63.0992C55.3844 62.9896 56.6921 62.5874 57.5621 62.2488C59.7155 61.4182 61.4175 59.7162 62.2482 57.5628C62.5861 56.6927 62.9883 55.3857 63.0985 52.9784C63.2173 50.3742 63.2422 49.5934 63.2422 43.0007C63.2422 36.4072 63.2173 35.6264 63.0985 33.0229C62.9889 30.6156 62.5867 29.3079 62.2482 28.4379ZM43 55.679C35.9971 55.679 30.3203 50.0029 30.3203 43C30.3203 35.9971 35.9971 30.321 43 30.321C50.0022 30.321 55.679 35.9971 55.679 43C55.679 50.0029 50.0022 55.679 43 55.679ZM56.1803 32.7828C54.5439 32.7828 53.2172 31.4561 53.2172 29.8197C53.2172 28.1833 54.5439 26.8566 56.1803 26.8566C57.8167 26.8566 59.1434 28.1833 59.1434 29.8197C59.1427 31.4561 57.8167 32.7828 56.1803 32.7828Z"
+                      fill="#F9B300"
+                    />
+                    <path
+                      d="M43 0C19.2554 0 0 19.2554 0 43C0 66.7446 19.2554 86 43 86C66.7446 86 86 66.7446 86 43C86 19.2554 66.7446 0 43 0ZM67.5425 53.1798C67.423 55.8083 67.0051 57.6028 66.3949 59.1736C65.1122 62.4903 62.4903 65.1122 59.1736 66.3949C57.6034 67.0051 55.8083 67.4224 53.1805 67.5425C50.5474 67.6625 49.7063 67.6914 43.0007 67.6914C36.2944 67.6914 35.4539 67.6625 32.8202 67.5425C30.1924 67.4224 28.3972 67.0051 26.8271 66.3949C25.1789 65.7749 23.6869 64.8031 22.4534 63.5466C21.1975 62.3138 20.2258 60.8211 19.6058 59.1736C18.9956 57.6034 18.5776 55.8083 18.4582 53.1805C18.3368 50.5468 18.3086 49.7056 18.3086 43C18.3086 36.2944 18.3368 35.4532 18.4575 32.8202C18.577 30.1917 18.9942 28.3972 19.6044 26.8264C20.2245 25.1789 21.1969 23.6862 22.4534 22.4534C23.6862 21.1969 25.1789 20.2251 26.8264 19.6051C28.3972 18.9949 30.1917 18.5776 32.8202 18.4575C35.4532 18.3375 36.2944 18.3086 43 18.3086C49.7056 18.3086 50.5468 18.3375 53.1798 18.4582C55.8083 18.5776 57.6028 18.9949 59.1736 19.6044C60.8211 20.2245 62.3138 21.1969 63.5473 22.4534C64.8031 23.6869 65.7755 25.1789 66.3949 26.8264C67.0058 28.3972 67.423 30.1917 67.5431 32.8202C67.6632 35.4532 67.6914 36.2944 67.6914 43C67.6914 49.7056 67.6632 50.5468 67.5425 53.1798Z"
+                      fill="#F9B300"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="on-instagram__body">
+                <div class="on-instagram__imgs">
+                  <div class="iphone-one">
+                    <img src="./img/iphone1.png" alt="iphone" />
+                  </div>
+                  <div class="iphone-two">
+                    <img src="./img/iphone2.png" alt="iphone" />
+                  </div>
+                </div>
+                <div class="on-instagram__cards">
+                  <div class="on-instagram__card"></div>
+                  <div class="on-instagram__card"></div>
+                  <div class="on-instagram__card"></div>
+                  <div class="on-instagram__card"></div>
+                  <div class="on-instagram__card"></div>
+                  <div class="on-instagram__card"></div>
+                </div>
+                <div class="on-instagram__arrow">
+                  <svg
+                    viewBox="0 0 27 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.2929L20.3431 0.928934C19.9526 0.53841 19.3195 0.538409 18.9289 0.928934C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM-8.74228e-08 9L26 9L26 7L8.74228e-08 7L-8.74228e-08 9Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscription">
+          <div class="subscription__container">
+            <div class="subscription__content">
+              <div class="subscription__body">
+                <div class="subscription__title">
+                  Подписка на новости и рассылку
+                </div>
+                <div class="subscription__text">
+                  Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе
+                  новых поставок, скидок и эксклюзивных предложений.
+                </div>
+                <form action="#" class="subscription__form">
+                  <input
+                    class="subscription__input"
+                    type="text"
+                    placeholder="Ваш email"
+                  />
+                  <div class="subscription__button">
+                    <div class="subscription__button-link">Подписаться</div>
+                  </div>
+                  <div class="subscription__thanks">Спасибо за подписку!</div>
+                </form>
+
+                <div class="subscription__agreement">
+                  Нажимая на кнопку “Подписаться”, вы принимаете правила
+                  <span>пользовательского соглашения</span>
+                </div>
+              </div>
+              <div class="subscription__image">
+                <div class="subscription__cup">
+                  <img src="./img/backgroundCup.png" alt="cup" />
+                </div>
+                <div class="subscription__beans">
+                  <img src="./img/backgroundCoffeeBeans.png" alt="beans" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__content">
+            <a class="footer__logo" href="#">
+              <img src="./img/logo.png" alt="" />
+            </a>
+            <nav class="footer__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Каталог товаров</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/script.js"></script>
     </div>
-</body>
+  </body>
 </html>
