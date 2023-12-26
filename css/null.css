@@ -43,3 +43,8 @@ body {
     src: url(/fonts/gilroy/Gilroy-Light.otf);
     font-weight: 300;
 }
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/fonts/gilroy/gilroy-medium.ttf);
+    font-weight: 500;
+}
