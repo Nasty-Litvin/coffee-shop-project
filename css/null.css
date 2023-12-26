@@ -48,3 +48,8 @@ body {
     src: url(/fonts/gilroy/gilroy-medium.ttf);
     font-weight: 500;
 }
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/fonts/gilroy/gilroy-black.ttf);
+    font-weight: 900;
+}
